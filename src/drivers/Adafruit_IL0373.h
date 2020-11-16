@@ -1,8 +1,7 @@
 #ifndef LIB_ADAFRUIT_IL0373
 #define LIB_ADAFRUIT_IL0373
 
-#include "Adafruit_EPD.h"
-#include <Arduino.h>
+  #include "../Adafruit_EPD.h"
 
 #define IL0373_PANEL_SETTING 0x00
 #define IL0373_POWER_SETTING 0x01

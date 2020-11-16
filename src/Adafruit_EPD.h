@@ -25,8 +25,8 @@
 #define RAMBUFSIZE 64 ///< size of the ram buffer
 
 #include "Adafruit_MCPSRAM.h"
-#include <Adafruit_GFX.h>
-#include <Adafruit_SPIDevice.h>
+#include "Adafruit_GFX.h"
+// #include <Adafruit_SPIDevice.h> / removing
 
 /**************************************************************************/
 /*!
@@ -121,7 +121,7 @@ protected:
       _reset_pin,                     ///< reset pin
       _cs_pin,                        ///< chip select pin
       _busy_pin;                      ///< busy pin
-  Adafruit_SPIDevice *spi_dev = NULL; ///< SPI object
+  SPIClass *spi_dev = NULL; ///< SPI object
   static bool _isInTransaction;       ///< true if SPI bus is in trasnfer state
   bool singleByteTxns; ///< if true CS will go high after every data byte
                        ///< transferred

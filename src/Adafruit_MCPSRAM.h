@@ -1,5 +1,4 @@
-#include <Arduino.h>
-#include <SPI.h>
+#include "SPI.h"
 
 #define MCPSRAM_READ 0x03  ///< read command
 #define MCPSRAM_WRITE 0x02 ///< write command
@@ -37,7 +36,7 @@ public:
   void csLow();
 
 private:
-  boolean hwSPI; ///< true if using hardware SPI
+  bool hwSPI; ///< true if using hardware SPI
 #ifdef HAVE_PORTREG
   PortReg *mosiport, *clkport, *csport, *misoport;
   PortMask mosipinmask, clkpinmask, cspinmask, misopinmask;

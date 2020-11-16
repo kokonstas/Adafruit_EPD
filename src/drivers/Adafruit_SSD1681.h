@@ -1,8 +1,7 @@
 #ifndef LIB_ADAFRUIT_SSD1681
 #define LIB_ADAFRUIT_SSD1681
 
-#include "Adafruit_EPD.h"
-#include <Arduino.h>
+#include "../Adafruit_EPD.h"
 
 #define EPD_RAM_BW 0x10
 #define EPD_RAM_RED 0x13

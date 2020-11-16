@@ -1,8 +1,7 @@
 #ifndef LIB_ADAFRUIT_SSD1608
 #define LIB_ADAFRUIT_SSD1608
 
-#include "Adafruit_EPD.h"
-#include <Arduino.h>
+#include "../Adafruit_EPD.h"
 
 #define EPD_RAM_BW 0x10
 

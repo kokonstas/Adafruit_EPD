@@ -1,8 +1,6 @@
 ﻿#include "Adafruit_MCPSRAM.h"
 
-#include <Arduino.h>
-
-#include <SPI.h>
+#include "SPI.h"
 
 /**************************************************************************/
 /*!

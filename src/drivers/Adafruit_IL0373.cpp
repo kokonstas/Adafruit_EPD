@@ -1,11 +1,11 @@
 #include "Adafruit_IL0373.h"
-#include "Adafruit_EPD.h"
+#include "../Adafruit_EPD.h"
 
 #define BUSY_WAIT 100
 
 // clang-format off
 
-const uint8_t il0373_default_init_code[] {
+const uint8_t il0373_default_init_code[] = {
   IL0373_POWER_SETTING, 5, 0x03, 0x00, 0x2b, 0x2b, 0x09,
     IL0373_BOOSTER_SOFT_START, 3, 0x17, 0x17, 0x17,
     IL0373_POWER_ON, 0,
@@ -92,7 +92,7 @@ Adafruit_IL0373::Adafruit_IL0373(int width, int height, int8_t DC, int8_t RST,
 */
 /**************************************************************************/
 void Adafruit_IL0373::busy_wait(void) {
-  Serial.print("Waiting...");
+  //Serial.print("Waiting...");
   if (_busy_pin >= 0) {
     while (!digitalRead(_busy_pin)) {
       delay(10); // wait for busy high
@@ -100,7 +100,7 @@ void Adafruit_IL0373::busy_wait(void) {
   } else {
     delay(BUSY_WAIT);
   }
-  Serial.println("OK!");
+  //Serial.println("OK!");
 }
 
 /**************************************************************************/
@@ -253,7 +253,7 @@ void Adafruit_IL0373::displayPartial(uint16_t x1, uint16_t y1, uint16_t x2,
 
   // x1 and x2 must be on byte boundaries
   x1 -= x1 % 8;           // round down;
-  x2 = (x2 + 7) & ~0b111; // round up
+  x2 = (x2 + 7) & ~0x7; // round up
 
   // Serial.println("Partial update!");
 
@@ -311,11 +311,11 @@ void Adafruit_IL0373::displayPartial(uint16_t x1, uint16_t y1, uint16_t x2,
       // SPItransfer(0xFF);
     }
   }
-  Serial.println();
+  //Serial.println();
   csHigh();
 
 #ifdef EPD_DEBUG
-  Serial.println("  Update");
+  //Serial.println("  Update");
 #endif
 
   update();
@@ -323,7 +323,7 @@ void Adafruit_IL0373::displayPartial(uint16_t x1, uint16_t y1, uint16_t x2,
   EPD_command(IL0373_PARTIAL_EXIT);
 
 #ifdef EPD_DEBUG
-  Serial.println("  Powering Down");
+  //Serial.println("  Powering Down");
 #endif
 
   powerDown();

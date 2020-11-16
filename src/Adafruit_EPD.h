@@ -26,6 +26,10 @@
 
 #include "Adafruit_MCPSRAM.h"
 #include "Adafruit_GFX.h"
+#include <stdlib.h>
+#include <string.h>
+#include "GPIO.h"
+
 // #include <Adafruit_SPIDevice.h> / removing
 
 /**************************************************************************/
@@ -121,17 +125,17 @@ protected:
       _reset_pin,                     ///< reset pin
       _cs_pin,                        ///< chip select pin
       _busy_pin;                      ///< busy pin
-  SPIClass *spi_dev = NULL; ///< SPI object
+  SPIClass *spi_dev; // todo = NULL; ///< SPI object
   static bool _isInTransaction;       ///< true if SPI bus is in trasnfer state
   bool singleByteTxns; ///< if true CS will go high after every data byte
                        ///< transferred
 
-  const uint8_t *_epd_init_code = NULL;
-  const uint8_t *_epd_lut_code = NULL;
-  const uint8_t *_epd_partial_init_code = NULL;
-  const uint8_t *_epd_partial_lut_code = NULL;
+  const uint8_t *_epd_init_code; // todo  = NULL;
+  const uint8_t *_epd_lut_code; // todo  = NULL;
+  const uint8_t *_epd_partial_init_code; // todo  = NULL;
+  const uint8_t *_epd_partial_lut_code; // todo  = NULL;
 
-  uint16_t default_refresh_delay = 15000;
+  #define default_refresh_delay 15000
 
   Adafruit_MCPSRAM sram; ///< the ram chip object if using off-chip ram
 

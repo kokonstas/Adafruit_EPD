@@ -1,0 +1,9 @@
+.\objects\adafruit_ssd1675b.o: ..\..\src\drivers\Adafruit_SSD1675B.cpp
+.\objects\adafruit_ssd1675b.o: ..\..\src\drivers\Adafruit_SSD1675B.h
+.\objects\adafruit_ssd1675b.o: ..\..\src\drivers\../Adafruit_EPD.h
+.\objects\adafruit_ssd1675b.o: ..\..\src\drivers\../Adafruit_MCPSRAM.h
+.\objects\adafruit_ssd1675b.o: ..\..\src\drivers\../SPI.h
+.\objects\adafruit_ssd1675b.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\cstdint
+.\objects\adafruit_ssd1675b.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\adafruit_ssd1675b.o: ..\..\src\drivers\../Adafruit_GFX.h
+.\objects\adafruit_ssd1675b.o: ..\..\src\drivers\../gfxfont.h

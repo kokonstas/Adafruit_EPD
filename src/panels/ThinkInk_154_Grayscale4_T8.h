@@ -6,7 +6,7 @@
 
 // clang-format off
 
-static const uint8_t ti_154t8_gray4_init_code[] {
+static const uint8_t ti_154t8_gray4_init_code[] = {
   IL0373_POWER_SETTING, 5, 0x03, 0x00, 0x2b, 0x2b, 0x13,
   IL0373_BOOSTER_SOFT_START, 3, 0x17, 0x17, 0x17,
   IL0373_POWER_ON, 0,
@@ -18,7 +18,7 @@ static const uint8_t ti_154t8_gray4_init_code[] {
   0xFE // EOM
 };
 
-static const uint8_t ti_154t8_monopart_init_code[] {
+static const uint8_t ti_154t8_monopart_init_code[] = {
   IL0373_POWER_SETTING, 5, 0x03, 0x00, 0x2b, 0x2b, 0x03,
   IL0373_BOOSTER_SOFT_START, 3, 0x17, 0x17, 0x17,
   IL0373_POWER_ON, 0,
@@ -30,7 +30,7 @@ static const uint8_t ti_154t8_monopart_init_code[] {
   0xFE // EOM
 };
 
-static const uint8_t ti_154t8_monofull_init_code[] {
+static const uint8_t ti_154t8_monofull_init_code[] = {
   IL0373_BOOSTER_SOFT_START, 3, 0x17, 0x17, 0x17,
   IL0373_POWER_ON, 0,
   0xFF, 200,

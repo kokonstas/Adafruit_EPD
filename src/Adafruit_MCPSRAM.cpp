@@ -1,6 +1,9 @@
-﻿#include "Adafruit_MCPSRAM.h"
+#include "Adafruit_MCPSRAM.h"
 
 #include "SPI.h"
+#include "GPIO.h"
+#include <cstdint>
+
 
 /**************************************************************************/
 /*!

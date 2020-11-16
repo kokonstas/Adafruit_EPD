@@ -1,11 +1,11 @@
 #include "Adafruit_SSD1680.h"
-#include "Adafruit_EPD.h"
+#include "../Adafruit_EPD.h"
 
 #define BUSY_WAIT 500
 
 // clang-format off
 
-const uint8_t ssd1680_default_init_code[] {
+const uint8_t ssd1680_default_init_code[] = {
   SSD1680_SW_RESET, 0, // soft reset
     0xFF, 20,          // busy wait
     SSD1680_DATA_MODE, 1, 0x03, // Ram data entry mode

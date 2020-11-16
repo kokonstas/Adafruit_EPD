@@ -24,6 +24,7 @@
 
 #include "Adafruit_GFX.h"
 #include "SPI.h"
+#include "GPIO.h"
 
 // HARDWARE CONFIG ---------------------------------------------------------
 
@@ -474,7 +475,7 @@ protected:
       int8_t _d0;              ///< Data pin 0 #
       int8_t _wr;              ///< Write strobe pin #
       int8_t _rd;              ///< Read strobe pin # (or -1)
-      bool wide = 0;           ///< If true, is 16-bit interface
+      bool wide; //= 0; todo           ///< If true, is 16-bit interface
     } tft8;                    ///< Parallel interface settings
 #if defined(__cplusplus) && (__cplusplus >= 201100)
   }; ///< Only one interface is active
@@ -509,12 +510,12 @@ protected:
   int8_t _cs;              ///< Chip select pin # (or -1)
   int8_t _dc;              ///< Data/command pin #
 
-  int16_t _xstart = 0;          ///< Internal framebuffer X offset
-  int16_t _ystart = 0;          ///< Internal framebuffer Y offset
-  uint8_t invertOnCommand = 0;  ///< Command to enable invert mode
-  uint8_t invertOffCommand = 0; ///< Command to disable invert mode
+  int16_t _xstart; // todo = 0;          ///< Internal framebuffer X offset
+  int16_t _ystart; // todo  = 0;          ///< Internal framebuffer Y offset
+  uint8_t invertOnCommand; // todo  = 0;  ///< Command to enable invert mode
+  uint8_t invertOffCommand; // todo  = 0; ///< Command to disable invert mode
 
-  uint32_t _freq = 0; ///< Dummy var to keep subclasses happy
+  uint32_t _freq; // todo  = 0; ///< Dummy var to keep subclasses happy
 };
 
 #endif // end __AVR_ATtiny85__

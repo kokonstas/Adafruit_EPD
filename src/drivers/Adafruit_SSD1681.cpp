@@ -1,11 +1,13 @@
 #include "Adafruit_SSD1681.h"
-#include "Adafruit_EPD.h"
+#include "../Adafruit_EPD.h"
+#include "../GPIO.h"
+#include <stdlib.h>
 
 #define BUSY_WAIT 500
 
 // clang-format off
 
-const uint8_t ssd1681_default_init_code[] {
+const uint8_t ssd1681_default_init_code[] = {
   SSD1681_SW_RESET, 0, // soft reset
     0xFF, 20,          // busy wait
     SSD1681_DATA_MODE, 1, 0x03, // Ram data entry mode
@@ -196,21 +198,23 @@ void Adafruit_SSD1681::displayPartial(uint16_t x1, uint16_t y1, uint16_t x2,
     EPD_swap(y1, y2);
 
   /*
-  Serial.print("x: ");
-  Serial.print(x1);
-  Serial.print(" -> ");
-  Serial.println(x2);
-  Serial.print("y: ");
-  Serial.print(y1);
-  Serial.print(" -> ");
-  Serial.println(y2);
+  // Serial.print("x: ");
+  // Serial.print(x1);
+  // Serial.print(" -> ");
+  // Serial.println(x2);
+  // Serial.print("y: ");
+  // Serial.print(y1);
+  // Serial.print(" -> ");
+  // Serial.println(y2);
   */
 
   // x1 and x2 must be on byte boundaries
-  x1 -= x1 % 8;           // round down;
-  x2 = (x2 + 7) & ~0b111; // round up
-
-  Serial.println("---------------partial=============");
+  x1 -= x1 % 8;           // round down
+  x2 = (x2 + 7) & ~(0x7); // round up
+	
+#ifdef EPD_DEBUG
+  // Serial.println("---------------partial=============");
+#endif
   // perform standard power up
   powerUp();
 
@@ -222,8 +226,9 @@ void Adafruit_SSD1681::displayPartial(uint16_t x1, uint16_t y1, uint16_t x2,
   // write image
   writeRAMCommand(0);
 
-  Serial.print("Transfering: ");
-
+#ifdef EPD_DEBUG
+  // Serial.print("Transfering: ");
+#endif
   dcHigh();
   for (uint16_t y = y1; y < y2; y++) {
     for (uint16_t x = x1; x < x2; x += 8) {
@@ -235,13 +240,13 @@ void Adafruit_SSD1681::displayPartial(uint16_t x1, uint16_t y1, uint16_t x2,
   csHigh();
 
 #ifdef EPD_DEBUG
-  Serial.println("  UpdatePartial");
+  // Serial.println("  UpdatePartial");
 #endif
 
   updatePartial();
 
 #ifdef EPD_DEBUG
-  Serial.println("  partial Powering Down");
+  // Serial.println("  partial Powering Down");
 #endif
 
   powerDown();

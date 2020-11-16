@@ -33,6 +33,9 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #include "Adafruit_GFX.h"
 #include "glcdfont.c"
+#include <stdlib.h>
+#include <string.h>
+
 #ifdef __AVR__
 #include <avr/pgmspace.h>
 #elif defined(ESP8266) || defined(ESP32)
@@ -1486,7 +1489,7 @@ void Adafruit_GFX::getTextBounds(const char *str, int16_t x, int16_t y,
     @param    h      The boundary height, set by function
 */
 /**************************************************************************/
-void Adafruit_GFX::getTextBounds(const String &str, int16_t x, int16_t y,
+void Adafruit_GFX::getTextBounds(const std::string &str, int16_t x, int16_t y,
                                  int16_t *x1, int16_t *y1, uint16_t *w,
                                  uint16_t *h) {
   if (str.length() != 0) {

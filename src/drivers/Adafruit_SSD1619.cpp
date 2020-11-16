@@ -1,11 +1,11 @@
 #include "Adafruit_SSD1619.h"
-#include "Adafruit_EPD.h"
+#include "../Adafruit_EPD.h"
 
 #define BUSY_WAIT 500
 
 // clang-format off
 
-const uint8_t ssd1619_default_init_code[] {
+const uint8_t ssd1619_default_init_code[] = {
   SSD1619_SW_RESET, 0, // soft reset
     0xFF, 20,          // busy wait
 

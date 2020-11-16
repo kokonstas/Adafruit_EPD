@@ -1,0 +1,9 @@
+.\objects\adafruit_ssd1681.o: ..\..\src\drivers\Adafruit_SSD1681.cpp
+.\objects\adafruit_ssd1681.o: ..\..\src\drivers\Adafruit_SSD1681.h
+.\objects\adafruit_ssd1681.o: ..\..\src\drivers\../Adafruit_EPD.h
+.\objects\adafruit_ssd1681.o: ..\..\src\drivers\../Adafruit_MCPSRAM.h
+.\objects\adafruit_ssd1681.o: ..\..\src\drivers\../SPI.h
+.\objects\adafruit_ssd1681.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\cstdint
+.\objects\adafruit_ssd1681.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\adafruit_ssd1681.o: ..\..\src\drivers\../Adafruit_GFX.h
+.\objects\adafruit_ssd1681.o: ..\..\src\drivers\../gfxfont.h

@@ -1,5 +1,5 @@
 #include "Adafruit_SSD1675.h"
-#include "Adafruit_EPD.h"
+#include "../Adafruit_EPD.h"
 
 #define BUSY_WAIT 500
 

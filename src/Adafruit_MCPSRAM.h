@@ -1,4 +1,5 @@
 #include "SPI.h"
+#include <stdint.h>
 
 #define MCPSRAM_READ 0x03  ///< read command
 #define MCPSRAM_WRITE 0x02 ///< write command
@@ -42,5 +43,6 @@ private:
   PortMask mosipinmask, clkpinmask, cspinmask, misopinmask;
 #endif
   int8_t _cs, _mosi, _miso, _sck;
-  SPIClass *_spi = NULL;
+  //SPIClass * _spi = NULL; //todo might caused error
+	SPIClass * _spi;
 };

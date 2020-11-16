@@ -34,7 +34,6 @@
  */
 
 #include "Adafruit_EPD.h"
-#include <stdlib.h>
 
 bool Adafruit_EPD::_isInTransaction = false;
 
@@ -67,11 +66,10 @@ Adafruit_EPD::Adafruit_EPD(int width, int height, int8_t spi_mosi,
     use_sram = false;
   }
 
-  spi_dev = new Adafruit_SPIDevice(CS, spi_clock, spi_miso, spi_mosi,
+  spi_dev = new SPIClass(CS, spi_clock, spi_miso, spi_mosi,
                                    4000000,               // frequency
-                                   SPI_BITORDER_MSBFIRST, // bit order
                                    SPI_MODE0              // data mode
-  );
+  ); // todo, this is on the heap
 
   singleByteTxns = false;
   buffer1_size = buffer2_size = 0;
@@ -107,11 +105,9 @@ Adafruit_EPD::Adafruit_EPD(int width, int height, int8_t DC, int8_t RST,
     use_sram = false;
   }
 
-  spi_dev = new Adafruit_SPIDevice(CS,
-                                   4000000,               // frequency
-                                   SPI_BITORDER_MSBFIRST, // bit order
-                                   SPI_MODE0,             // data mode
-                                   spi);
+  spi_dev = new SPIClass(CS,
+												 4000000,               // frequency
+												 spi);
 
   singleByteTxns = false;
   buffer1_size = buffer2_size = 0;
@@ -146,19 +142,19 @@ void Adafruit_EPD::begin(bool reset) {
   setBlackBuffer(0, true);  // black defaults to inverted
   setColorBuffer(1, false); // red defaults to not inverted
 
-  layer_colors[EPD_WHITE] = 0b00;
-  layer_colors[EPD_BLACK] = 0b01;
-  layer_colors[EPD_RED] = 0b10;
-  layer_colors[EPD_GRAY] = 0b10;
-  layer_colors[EPD_DARK] = 0b01;
-  layer_colors[EPD_LIGHT] = 0b10;
+  layer_colors[EPD_WHITE] = 0x00;
+  layer_colors[EPD_BLACK] = 0x01;
+  layer_colors[EPD_RED] = 0x2;
+  layer_colors[EPD_GRAY] = 0x2;
+  layer_colors[EPD_DARK] = 0x1;
+  layer_colors[EPD_LIGHT] = 0x2;
 
   if (use_sram) {
     sram.begin();
     sram.write8(0, K640_SEQUENTIAL_MODE, MCPSRAM_WRSR);
   }
 
-  Serial.println("set pins");
+  //Serial.println("set pins");
   // set pin directions
   pinMode(_dc_pin, OUTPUT);
   pinMode(_cs_pin, OUTPUT);
@@ -176,16 +172,16 @@ void Adafruit_EPD::begin(bool reset) {
     return;
   }
 
-  Serial.println("hard reset");
+  //Serial.println("hard reset");
   if (reset) {
     hardwareReset();
   }
 
-  Serial.println("busy");
+  //Serial.println("busy");
   if (_busy_pin >= 0) {
     pinMode(_busy_pin, INPUT);
   }
-  Serial.println("done!");
+  //Serial.println("done!");
 }
 
 /**************************************************************************/
@@ -290,13 +286,13 @@ void Adafruit_EPD::display(bool sleep) {
   uint8_t c;
 
 #ifdef EPD_DEBUG
-  Serial.println("  Powering Up");
+  //Serial.println("  Powering Up");
 #endif
 
   powerUp();
 
 #ifdef EPD_DEBUG
-  Serial.println("  Set RAM address");
+  //Serial.println("  Set RAM address");
 #endif
 
   // Set X & Y ram counters
@@ -372,13 +368,13 @@ void Adafruit_EPD::display(bool sleep) {
   }
 
 #ifdef EPD_DEBUG
-  Serial.println("  Update");
+  //Serial.println("  Update");
 #endif
   update();
 
   if (sleep) {
 #ifdef EPD_DEBUG
-    Serial.println("  Powering Down");
+    //Serial.println("  Powering Down");
 #endif
     powerDown();
   }
@@ -503,7 +499,7 @@ void Adafruit_EPD::EPD_commandList(const uint8_t *init_code) {
       continue;
     }
     if (num_args > sizeof(buf)) {
-      Serial.println("ERROR - buf not large enough!");
+      //Serial.println("ERROR - buf not large enough!");
       while (1)
         delay(10);
     }
@@ -546,8 +542,8 @@ uint8_t Adafruit_EPD::EPD_command(uint8_t c, bool end) {
 
   uint8_t data = SPItransfer(c);
 #ifdef EPD_DEBUG
-  Serial.print("\tCommand: 0x");
-  Serial.println(c, HEX);
+  //Serial.print("\tCommand: 0x");
+  //Serial.println(c, HEX);
 #endif
 
   if (end) {
@@ -569,19 +565,19 @@ void Adafruit_EPD::EPD_data(const uint8_t *buf, uint16_t len) {
   dcHigh();
 
 #ifdef EPD_DEBUG
-  Serial.print("\tData: ");
+  //Serial.print("\tData: ");
 #endif
   for (uint16_t i = 0; i < len; i++) {
     SPItransfer(buf[i]);
 #ifdef EPD_DEBUG
-    Serial.print("0x");
-    Serial.print(buf[i], HEX);
-    Serial.print(", ");
+    //Serial.print("0x");
+    //Serial.print(buf[i], HEX);
+    //Serial.print(", ");
 #endif
   }
 
 #ifdef EPD_DEBUG
-  Serial.println();
+  //Serial.println();
 #endif
 
   csHigh();

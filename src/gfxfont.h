@@ -6,6 +6,7 @@
 
 #ifndef _GFXFONT_H_
 #define _GFXFONT_H_
+#include <stdint.h>
 
 /// Font data stored PER GLYPH
 typedef struct {

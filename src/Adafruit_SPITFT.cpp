@@ -1886,7 +1886,7 @@ void Adafruit_SPITFT::sendCommand(uint8_t commandByte, const uint8_t *dataBytes,
       SPI_WRITE16(*(uint16_t *)dataBytes);
       dataBytes += 2;
     } else {
-      spiWrite(pgm_read_byte(dataBytes++));
+      spiWrite(*(dataBytes++)); //used to be pgm_read_byte
     }
   }
 
@@ -1923,7 +1923,7 @@ void Adafruit_SPITFT::sendCommand16(uint16_t commandWord,
     SPI_WRITE16(commandWord); // Send the command word
     SPI_DC_HIGH();            // Data mode
     commandWord++;
-    SPI_WRITE16((uint16_t)pgm_read_byte(dataBytes++));
+    SPI_WRITE16((uint16_t)*(dataBytes++)); //used to be pgm_read_byte
   }
 
   if (_cs >= 0)
@@ -2016,8 +2016,8 @@ inline void Adafruit_SPITFT::SPI_BEGIN_TRANSACTION(void) {
 #elif defined(RASPI) || defined(ARDUINO_ARCH_STM32F1)
     hwspi._spi->setClock(hwspi._freq);
 #endif
-    hwspi._spi->setBitOrder(MSBFIRST);
-    hwspi._spi->setDataMode(hwspi._mode);
+    //hwspi._spi->setBitOrder(MSBFIRST);
+    //hwspi._spi->setDataMode(hwspi._mode);
 #endif // end !SPI_HAS_TRANSACTION
   }
 }

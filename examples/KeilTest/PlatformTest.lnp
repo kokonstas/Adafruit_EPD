@@ -1,1 +1,22 @@
--mthumb-interwork -o "./PlatformTest.elf" "./epdtest.o" "./glcdfont.o" "./adafruit_epd.o" "./adafruit_gfx.o" "./adafruit_grayoled.o" "./adafruit_mcpsram.o" "./adafruit_spitft.o" "./adafruit_il0373.o" "./adafruit_il0398.o" "./adafruit_il91874.o" "./adafruit_ssd1608.o" "./adafruit_ssd1619.o" "./adafruit_ssd1675.o" "./adafruit_ssd1675b.o" "./adafruit_ssd1680.o" "./adafruit_ssd1681.o" "./arm_startup_nrf52840.o" "./system_nrf52840.o" -nostartfiles -lm
+--cpu=Cortex-M4.fp
+".\epdtest.o"
+".\glcdfont.o"
+".\adafruit_epd.o"
+".\adafruit_gfx.o"
+".\adafruit_mcpsram.o"
+".\adafruit_spitft.o"
+".\adafruit_il0373.o"
+".\adafruit_il0398.o"
+".\adafruit_il91874.o"
+".\adafruit_ssd1608.o"
+".\adafruit_ssd1619.o"
+".\adafruit_ssd1675.o"
+".\adafruit_ssd1675b.o"
+".\adafruit_ssd1680.o"
+".\adafruit_ssd1681.o"
+".\spi.o"
+".\arm_startup_nrf52840.o"
+".\system_nrf52840.o"
+--entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\PlatformTest.map" -o .\PlatformTest.axf

@@ -14,7 +14,7 @@ enum IOMODE {
 
 #define delay(a)  // todo, change to RTOS config
 
-void pinMode(int p, IOMODE mode) {} // todo, change to port->pin
-void digitalWrite(int p, bool mode) {}  // todo, change to port->pin
-uint8_t digitalRead(int p) {}  // todo, change to port->pin
+void pinMode(int p, IOMODE mode); // todo, change to port->pin
+void digitalWrite(int p, bool mode);  // todo, change to port->pin
+uint8_t digitalRead(int p);  // todo, change to port->pin
 #endif

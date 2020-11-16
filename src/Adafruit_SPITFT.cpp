@@ -244,7 +244,8 @@ Adafruit_SPITFT::Adafruit_SPITFT(uint16_t w, uint16_t h, int8_t cs, int8_t dc,
 #else  // !ESP8266
 Adafruit_SPITFT::Adafruit_SPITFT(uint16_t w, uint16_t h, int8_t cs, int8_t dc,
                                  int8_t rst)
-    : Adafruit_SPITFT(w, h, &SPI, cs, dc, rst) {
+    //: Adafruit_SPITFT(w, h, &SPI, cs, dc, rst)  //todo decide on c++11 support
+{
   // This just invokes the hardware SPI constructor below,
   // passing the default SPI device (&SPI).
 }

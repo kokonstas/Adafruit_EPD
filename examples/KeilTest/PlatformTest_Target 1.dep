@@ -2,10 +2,10 @@ Dependencies for Project 'PlatformTest', Target 'Target 1': (DO NOT MODIFY !)
 F (..\..\src\EPDTest.c)(0x5FB2E829)(--cpp -c --cpu Cortex-M4.fp -g -W -O0 -Otime --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DNRF52840_XXAA-o .\epdtest.o --depend .\epdtest.d)
 I (..\..\src\Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\SPI.h)(0x5FB3047B)
+I (..\..\src\SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -41,7 +41,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\GPIO.h)(0x5FB2F987)
+I (..\..\src\GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers/../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers/Adafruit_IL0398.h)(0x5FB2E37C)
@@ -56,10 +56,10 @@ F (..\..\src\glcdfont.c)(0x5FB3024D)(-c --cpu Cortex-M4.fp -g -W -O0 -Otime --ap
 F (..\..\src\Adafruit_EPD.cpp)(0x5FB30432)(--cpp -c --cpu Cortex-M4.fp -g -W -O0 -Otime --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DNRF52840_XXAA-o .\adafruit_epd.o --depend .\adafruit_epd.d)
 I (..\..\src\Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\SPI.h)(0x5FB3047B)
+I (..\..\src\SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -95,7 +95,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\GPIO.h)(0x5FB2F987)
+I (..\..\src\GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers/../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers/Adafruit_IL0398.h)(0x5FB2E37C)
@@ -107,7 +107,7 @@ I (..\..\src\drivers/Adafruit_SSD1675B.h)(0x5FB2E391)
 I (..\..\src\drivers/Adafruit_SSD1680.h)(0x5FB2E395)
 I (..\..\src\drivers/Adafruit_SSD1681.h)(0x5FB2E399)
 F (..\..\src\Adafruit_GFX.cpp)(0x5FB2F6E8)(--cpp -c --cpu Cortex-M4.fp -g -W -O0 -Otime --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DNRF52840_XXAA-o .\adafruit_gfx.o --depend .\adafruit_gfx.d)
-I (..\..\src\Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
@@ -148,13 +148,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.CC)(0x564E052E)
 F (..\..\src\Adafruit_MCPSRAM.cpp)(0x5FB2F30A)(--cpp -c --cpu Cortex-M4.fp -g -W -O0 -Otime --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DNRF52840_XXAA-o .\adafruit_mcpsram.o --depend .\adafruit_mcpsram.d)
 I (..\..\src\Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\SPI.h)(0x5FB3047B)
+I (..\..\src\SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\GPIO.h)(0x5FB2F987)
-F (..\..\src\Adafruit_SPITFT.cpp)(0x5FB3018E)(--cpp -c --cpu Cortex-M4.fp -g -W -O0 -Otime --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DNRF52840_XXAA-o .\adafruit_spitft.o --depend .\adafruit_spitft.d)
-I (..\..\src\Adafruit_SPITFT.h)(0x5FB2F56E)
-I (..\..\src\Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\GPIO.h)(0x5FB307BB)
+F (..\..\src\Adafruit_SPITFT.cpp)(0x5FB306A9)(--cpp -c --cpu Cortex-M4.fp -g -W -O0 -Otime --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DNRF52840_XXAA-o .\adafruit_spitft.o --depend .\adafruit_spitft.d)
+I (..\..\src\Adafruit_SPITFT.h)(0x5FB306BE)
+I (..\..\src\Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
@@ -190,17 +190,17 @@ I (C:\Keil_v5\ARM\ARMCC\include\cstdio)(0x599F83FA)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\Print.h)(0x5FB3002E)
-I (..\..\src\SPI.h)(0x5FB3047B)
+I (..\..\src\SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
-I (..\..\src\GPIO.h)(0x5FB2F987)
+I (..\..\src\GPIO.h)(0x5FB307BB)
 F (..\..\src\drivers\Adafruit_IL0373.cpp)(0x5FB302B1)(--cpp -c --cpu Cortex-M4.fp -g -W -O0 -Otime --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DNRF52840_XXAA-o .\adafruit_il0373.o --depend .\adafruit_il0373.d)
 I (..\..\src\drivers\Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers\../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\drivers\../SPI.h)(0x5FB3047B)
+I (..\..\src\drivers\../SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\drivers\../gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -236,7 +236,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\drivers\../Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\drivers\../GPIO.h)(0x5FB2F987)
+I (..\..\src\drivers\../GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers\../drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers\../drivers/Adafruit_IL0398.h)(0x5FB2E37C)
 I (..\..\src\drivers\../drivers/../Adafruit_EPD.h)(0x5FB300DF)
@@ -251,10 +251,10 @@ F (..\..\src\drivers\Adafruit_IL0398.cpp)(0x5FB2FB45)(--cpp -c --cpu Cortex-M4.f
 I (..\..\src\drivers\Adafruit_IL0398.h)(0x5FB2E37C)
 I (..\..\src\drivers\../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\drivers\../SPI.h)(0x5FB3047B)
+I (..\..\src\drivers\../SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\drivers\../gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -290,7 +290,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\drivers\../Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\drivers\../GPIO.h)(0x5FB2F987)
+I (..\..\src\drivers\../GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers\../drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers\../drivers/../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../drivers/Adafruit_IL0398.h)(0x5FB2E37C)
@@ -305,10 +305,10 @@ F (..\..\src\drivers\Adafruit_IL91874.cpp)(0x5FB2FB45)(--cpp -c --cpu Cortex-M4.
 I (..\..\src\drivers\Adafruit_IL91874.h)(0x5FB2E37F)
 I (..\..\src\drivers\../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\drivers\../SPI.h)(0x5FB3047B)
+I (..\..\src\drivers\../SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\drivers\../gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -344,7 +344,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\drivers\../Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\drivers\../GPIO.h)(0x5FB2F987)
+I (..\..\src\drivers\../GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers\../drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers\../drivers/../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../drivers/Adafruit_IL0398.h)(0x5FB2E37C)
@@ -359,10 +359,10 @@ F (..\..\src\drivers\Adafruit_SSD1608.cpp)(0x5FB2FF86)(--cpp -c --cpu Cortex-M4.
 I (..\..\src\drivers\Adafruit_SSD1608.h)(0x5FB2E384)
 I (..\..\src\drivers\../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\drivers\../SPI.h)(0x5FB3047B)
+I (..\..\src\drivers\../SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\drivers\../gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -398,7 +398,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\drivers\../Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\drivers\../GPIO.h)(0x5FB2F987)
+I (..\..\src\drivers\../GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers\../drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers\../drivers/../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../drivers/Adafruit_IL0398.h)(0x5FB2E37C)
@@ -413,10 +413,10 @@ F (..\..\src\drivers\Adafruit_SSD1619.cpp)(0x5FB2FBB5)(--cpp -c --cpu Cortex-M4.
 I (..\..\src\drivers\Adafruit_SSD1619.h)(0x5FB2E389)
 I (..\..\src\drivers\../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\drivers\../SPI.h)(0x5FB3047B)
+I (..\..\src\drivers\../SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\drivers\../gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -452,7 +452,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\drivers\../Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\drivers\../GPIO.h)(0x5FB2F987)
+I (..\..\src\drivers\../GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers\../drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers\../drivers/../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../drivers/Adafruit_IL0398.h)(0x5FB2E37C)
@@ -467,10 +467,10 @@ F (..\..\src\drivers\Adafruit_SSD1675.cpp)(0x5FB2FB45)(--cpp -c --cpu Cortex-M4.
 I (..\..\src\drivers\Adafruit_SSD1675.h)(0x5FB2E38D)
 I (..\..\src\drivers\../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\drivers\../SPI.h)(0x5FB3047B)
+I (..\..\src\drivers\../SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\drivers\../gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -506,7 +506,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\drivers\../Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\drivers\../GPIO.h)(0x5FB2F987)
+I (..\..\src\drivers\../GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers\../drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers\../drivers/../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../drivers/Adafruit_IL0398.h)(0x5FB2E37C)
@@ -521,10 +521,10 @@ F (..\..\src\drivers\Adafruit_SSD1675B.cpp)(0x5FB2FB45)(--cpp -c --cpu Cortex-M4
 I (..\..\src\drivers\Adafruit_SSD1675B.h)(0x5FB2E391)
 I (..\..\src\drivers\../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\drivers\../SPI.h)(0x5FB3047B)
+I (..\..\src\drivers\../SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\drivers\../gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -560,7 +560,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\drivers\../Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\drivers\../GPIO.h)(0x5FB2F987)
+I (..\..\src\drivers\../GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers\../drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers\../drivers/../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../drivers/Adafruit_IL0398.h)(0x5FB2E37C)
@@ -575,10 +575,10 @@ F (..\..\src\drivers\Adafruit_SSD1680.cpp)(0x5FB2FBB4)(--cpp -c --cpu Cortex-M4.
 I (..\..\src\drivers\Adafruit_SSD1680.h)(0x5FB2E395)
 I (..\..\src\drivers\../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\drivers\../SPI.h)(0x5FB3047B)
+I (..\..\src\drivers\../SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\drivers\../gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -614,7 +614,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\drivers\../Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\drivers\../GPIO.h)(0x5FB2F987)
+I (..\..\src\drivers\../GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers\../drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers\../drivers/../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../drivers/Adafruit_IL0398.h)(0x5FB2E37C)
@@ -629,10 +629,10 @@ F (..\..\src\drivers\Adafruit_SSD1681.cpp)(0x5FB2FF43)(--cpp -c --cpu Cortex-M4.
 I (..\..\src\drivers\Adafruit_SSD1681.h)(0x5FB2E399)
 I (..\..\src\drivers\../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../Adafruit_MCPSRAM.h)(0x5FB2F13F)
-I (..\..\src\drivers\../SPI.h)(0x5FB3047B)
+I (..\..\src\drivers\../SPI.h)(0x5FB3074E)
 I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
-I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB3001C)
+I (..\..\src\drivers\../Adafruit_GFX.h)(0x5FB306E2)
 I (..\..\src\drivers\../gfxfont.h)(0x5FB2F185)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x564E052E)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x564E052E)
@@ -668,7 +668,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_error.h)(0x564E052E)
 I (..\..\src\drivers\../Print.h)(0x5FB3002E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F83FC)
-I (..\..\src\drivers\../GPIO.h)(0x5FB2F987)
+I (..\..\src\drivers\../GPIO.h)(0x5FB307BB)
 I (..\..\src\drivers\../drivers/Adafruit_IL0373.h)(0x5FB2FBB6)
 I (..\..\src\drivers\../drivers/../Adafruit_EPD.h)(0x5FB300DF)
 I (..\..\src\drivers\../drivers/Adafruit_IL0398.h)(0x5FB2E37C)
@@ -679,6 +679,10 @@ I (..\..\src\drivers\../drivers/Adafruit_SSD1675.h)(0x5FB2E38D)
 I (..\..\src\drivers\../drivers/Adafruit_SSD1675B.h)(0x5FB2E391)
 I (..\..\src\drivers\../drivers/Adafruit_SSD1680.h)(0x5FB2E395)
 I (..\..\src\drivers\../drivers/Adafruit_SSD1681.h)(0x5FB2E399)
+F (..\..\src\SPI.cpp)(0x5FB3077C)(--cpp -c --cpu Cortex-M4.fp -g -W -O0 -Otime --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DNRF52840_XXAA-o .\spi.o --depend .\spi.d)
+I (..\..\src\SPI.h)(0x5FB3074E)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x599F83FE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
 F (RTE\Device\nRF52840_xxAA\arm_startup_nrf52840.s)(0x5F36EDB4)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "NRF52840_XXAA SETA 1"--list .\arm_startup_nrf52840.lst --xref -o .\arm_startup_nrf52840.o --depend .\arm_startup_nrf52840.d)
 F (RTE\Device\nRF52840_xxAA\system_nrf52840.c)(0x5F36EDBC)(-c --cpu Cortex-M4.fp -g -W -O0 -Otime --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DNRF52840_XXAA-o .\system_nrf52840.o --depend .\system_nrf52840.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)

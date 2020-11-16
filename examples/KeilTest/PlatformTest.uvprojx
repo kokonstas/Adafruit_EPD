@@ -457,6 +457,11 @@
               <FileType>8</FileType>
               <FilePath>..\..\src\drivers\Adafruit_SSD1681.cpp</FilePath>
             </File>
+            <File>
+              <FileName>SPI.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\src\SPI.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

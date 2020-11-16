@@ -122,6 +122,7 @@ class Adafruit_SPITFT : public Adafruit_GFX {
 public:
   // CONSTRUCTORS --------------------------------------------------------
 
+	Adafruit_SPITFT::Adafruit_SPITFT() {};
   // Software SPI constructor: expects width & height (at default rotation
   // setting 0), 4 signal pins (cs, dc, mosi, sclk), 2 optional pins
   // (reset, miso). cs argument is required but can be -1 if unused --

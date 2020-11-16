@@ -17,6 +17,7 @@ static inline unsigned short __builtin_bswap16(unsigned short a)
 class Adafruit_GFX : public Print {
 
 public:
+	Adafruit_GFX() {};
   Adafruit_GFX(int16_t w, int16_t h); // Constructor
 
   /**********************************************************************/

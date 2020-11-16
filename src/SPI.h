@@ -30,6 +30,6 @@ class SPIClass{
 		void beginTransaction();
 };
 
-SPIClass SPI;
+extern SPIClass SPI;
  
 #endif
